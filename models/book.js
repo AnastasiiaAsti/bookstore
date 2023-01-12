@@ -14,3 +14,9 @@ const bookSchema = new Schema({
 })
 
 module.exports = mongoose.model('Book', bookSchema)
+
+// const books = [
+//     {id: 111111, name: 'Book 1', author: 'Author 1'},
+//     {id: 111112, name: 'Book 2', author: 'Author 2'},
+//     {id: 111113, name: 'Book 3', author: 'Author 3'}
+// ];
