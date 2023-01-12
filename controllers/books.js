@@ -2,7 +2,8 @@ const Book = require('../models/book')
 
 module.exports = {
     index,
-    show
+    show, 
+    new: newBook
 }
 
 function index(req, res) {
@@ -13,6 +14,12 @@ function index(req, res) {
 
 function show(req,res) {
     res.render('books/show', {
-        title: 'this is a SHOW page to show a specific book'
+        title: 'this is a SHOW page to view the details of any book'
+    })
+}
+
+function newBook(req, res) {
+    res.render('books/new', {
+        title: 'Renders a page where you can view a form for submitting a book'
     })
 }
