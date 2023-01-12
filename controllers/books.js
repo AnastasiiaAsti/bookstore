@@ -4,7 +4,8 @@ module.exports = {
     index,
     show, 
     new: newBook,
-    edit
+    edit,
+    delete: deleteBook
 }
 
 function index(req, res) {
@@ -31,3 +32,6 @@ function newBook(req, res) {
     })
 }
 
+function deleteBook(req, res) {
+    res.redirect('/books')
+}
