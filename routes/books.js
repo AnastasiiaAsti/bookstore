@@ -4,7 +4,9 @@ const booksCtrl = require('../controllers/books')
 
 router.get('/', booksCtrl.index);
 router.get('/new', booksCtrl.new);
+router.get('/:id/edit', booksCtrl.edit);
 router.get('/:id', booksCtrl.show);
+
 
 
 
