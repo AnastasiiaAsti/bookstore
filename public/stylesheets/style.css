@@ -94,7 +94,7 @@ ul {
 	z-index: 200;
     position: absolute;
     top: 10%;
-    right: -5%;
+    right: -3%;
     transform: translate(-50%,-50%);
     opacity: 0;
     transition: .25s 0s ease-in-out;
